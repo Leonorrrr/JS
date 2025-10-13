@@ -64,15 +64,16 @@ let c = parseFloat(prompt("Introduce un número"))
 let d = parseFloat(prompt("Introduce un número")) 
 let sumanotes = a+b+c+d
 let mitjana = sumanotes/4
-document.writeln ("La mitja aritmètica és de: "+resultat+"")
+document.writeln ("La mitjana aritmètica és de: "+resultat+"")
 
 }
 
 function ex8(){
- let a = parseFloat(prompt("Introduce un número"))
+
+    let a = parseFloat(prompt("Introduce un número"))
    let b = parseFloat(prompt("Introduce un número"))
    let c = parseFloat(prompt("Introduce un número"))
-   let bneg= -b
+   let bneg = -b
    let quadrat = Math.pow(b,2)
    let arrel = Math.sqrt(quadrat-(4*a*c));
    let num1 = bneg+arrel
@@ -85,5 +86,29 @@ function ex8(){
 }
 
  function ex9(){
-    
- }
+    let valor1 = parseInt(prompt("dime un num"))
+    let valor2 = parseInt(prompt("dime un num"))
+    if(valor1 >= valor2){
+        document.writeln("Hola, el meu nom és Leonor i el primer nombre és major o igual que el segon");
+    }else{
+    document.writeln("Hola, el meu primer llinatge és Lucero i el primer nombre és menor que el segon.");
+    }
+}
+
+function ex10(){
+ let resposta = prompt("dime un país")
+    if(resposta == "França"){
+	document.writeln("Europa");
+}else if(resposta == 'Estats Units'){
+	document.writeln("Amèrica");
+}else if(resposta == "Japó"){
+	document.writeln("No estàs ni contenta ni trista!!");
+}else if(resposta == "Egipte"){
+    document.writeln("Àfrica");
+}else{
+document.writeln("Mordor");
+}
+}
+
+
+ 
